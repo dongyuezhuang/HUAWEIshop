@@ -1,0 +1,53 @@
+[
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot.png"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot1.jpg",
+		"model" : "荣耀畅玩8C",
+		"refe" : "订金预定享权益 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot2.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot3.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot4.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot5.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot6.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot7.png",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	},
+	{
+		"url" : "http://127.0.0.1/huaweishop/img/hot8.jpg",
+		"model" : "荣耀10",
+		"refe" : "最高优惠400 标配送耳机",
+		"price" : "￥1099"
+	}
+]

@@ -1,0 +1,236 @@
+
+
+/*重置样式*/
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,div{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+
+body{background: #f2f2f2;}
+
+/*-------------------------------header-------------------------------------*/
+.header-wrap{background:#333;}
+header{
+	width:962px;
+	height:67px;
+	background:#333;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header h1{
+	width:50px;
+	height:34px;
+	float: left;
+	margin-top:17px;
+	background:url(../img/mask.png) no-repeat center/cover;
+}
+header h2{
+	width:98px;
+	height:67px;
+	float: left;
+	text-align: center;
+	line-height: 67px;
+	font-size: 16px;
+	color: #fff;
+}
+header p{
+	width:95px;
+	height:18px;
+	float: left;
+	text-align: right;
+	line-height: 18px;
+	margin-top:27px;
+	color: #fff;
+	font-size: 16px;
+	border-left: 1px solid #89afcc;
+}
+
+/*---------------------------------main----------------------------*/
+#main{
+	width:962px;
+	height:66px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#main ul{
+	height:36px;
+	margin-top:29px;
+}
+#main ul li{
+	float: left;
+	width: 146px;
+	height:36px;
+	color: #fff;
+	font-size:16px ;
+	line-height: 36px;
+}
+#main ul .ts1{
+	background:#b40707 url(../img/shoujihao.jpg) no-repeat 18px 6px;
+}
+#main ul .ts2{background:#cccccc url(../img/dianziyouxiang.jpg) no-repeat 18px 8px;margin-left:12px;}
+#main ul .ts3{
+	float: right;
+	width: 128px;
+	color: #000;
+	font-size:14px;
+	line-height: 36px;
+}
+#main ul .ts3 a{
+	color: #007dff;
+	margin-left:5px;
+}
+#main ul .ts1 span{
+	margin-left:53px;
+}
+#main ul .ts2 span{
+	margin-left:53px;
+}
+
+/*---------------------------------------#verify------------------------------------*/
+#verify{
+	width: 962px;
+	height: 524px;
+	margin: 0 auto 40px;
+	background:#fff;
+}
+#verify form{
+	width: 450px;
+	height: 524px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#verify form p{
+	height: 16px;
+	font-size: 12px;
+	text-indent:18px;
+	color:#b40707;
+	line-height:16px;
+	display: none;
+}
+#verify form div{
+	width: 427px;
+	height: 45px;
+}
+#verify form div span{
+	float: left;
+	width: 126px;
+	height: 42px;
+	text-indent:18px;
+	line-height: 42px;
+	border-radius: 20px 0 0 20px;
+	border: 1px solid #d9d9d9;
+	background: #f7f7f7;
+}
+#verify form div input{
+	float: right;
+	width: 295px;
+	height: 40px;
+	text-indent:18px;
+	border-radius: 0 20px 20px 0;
+	border: 1px solid #d9d9d9;
+	border-left: 0px;
+	background: #f7f7f7;
+}
+#verify form div input[type="button"]{
+	float: none;
+	width: 202px;
+	height: 40px;
+	border-radius:20px;
+	border: 1px solid #d9d9d9;
+	background: #b40707;
+	color: #fff;
+}
+#verify form .ts1{
+	margin-top: 40px;
+	letter-spacing:6px;
+	position: relative;
+}
+#verify form .ts2{
+	margin-top: 10px;
+}
+#verify form .ts3{
+	margin-top: 30px;
+	letter-spacing:5px;
+	position: relative;
+}
+#verify form .ts4{
+	margin-top: 10px;
+	letter-spacing:5px;
+	position: relative;
+}
+#verify form .ts5{
+	margin-top: 30px;
+	letter-spacing:30px;
+}
+#verify form .ts6{
+	margin-top: 10px;
+	letter-spacing:10px;
+}
+#verify form .ts7{
+	margin-top: 30px;
+	height: 40px;
+	text-align: center;
+}
+#verify form .ts1 i{
+	display: block;
+	width: 0px;
+	height:0px;
+	border-top: 6px solid #007dff;
+	border-bottom: 6px solid #f7f7f7;
+	border-left: 6px solid #f7f7f7;
+	border-right: 6px solid #f7f7f7;
+	position: absolute;
+	right: 17px;
+	top: 17px;
+}
+#verify form .ts3 #tuyzm{
+	display: block;
+	width: 100px;
+	height:40px;
+	font-size:20px;
+	line-height:40px;
+	border: 1px solid #bfbfbd;
+	position: absolute;
+	right: 17px;
+	top: 0;
+}
+#verify form .ts4 i{
+	display: block;
+	width: 70px;
+	height:16px;
+	position: absolute;
+	right: 23px;
+	top: 14px;
+	color: #007dff;
+	text-align: center;
+	font-size: 12px;
+	line-height:16px;
+	font-style: normal;
+	letter-spacing:2px;
+}
+
+
+/*-----------------------------------footer-------------------------------------*/
+footer{
+	width: 962px;
+	height:128px;
+	border-top: 1px solid #d7d7d7;
+	margin: 0 auto;
+	overflow: hidden;
+}
+footer p{
+	height: 24px;
+	color:#999 ;
+	line-height: 24px;
+	font-size: 12px;
+	text-align: center;
+}
+footer p:nth-child(1){
+	margin-top: 28px;
+}
+
