@@ -64,9 +64,7 @@ function fn2(){
 fn2();
 
 $("form").submit(function(){
-	alert(use&&pass)
 	if(use&&pass){
-		location.href="index.html"
 		return true;
 	}else{
 		return false;

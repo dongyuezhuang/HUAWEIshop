@@ -103,6 +103,8 @@ header p{
 	position:absolute;
 	top:66px;
 	left:26px;
+	font-size:12px;
+	color: red;
 	display: none;
 }
 #main form input{

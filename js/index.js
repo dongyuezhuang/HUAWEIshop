@@ -1,3 +1,59 @@
+$("dl").hover(function(){
+	$(this).css({
+		"transform": "translateY(-4px)",
+		"transition": "all 0.5s",
+		"box-shadow":"0px 15px 30px rgba(0,0,0,.2)"
+	})
+},function(){
+	$(this).css({
+		"transform": "translateY(0px)",
+		"box-shadow":""
+	})
+})
+$(window).scroll(function(){
+//	console.log($("html,body").scrollTop())
+	if($("html,body").scrollTop()>=1900){
+		$("#scrolltop").css("display","block")
+	}else{
+		$("#scrolltop").css("display","none")
+	}
+})
+$("#scrolltop").click(function(){
+	$("html,body").animate({
+		"scrollTop":"0"
+	},500)
+})
+$(".hover1").hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})
+$('.hover2').hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})
+$('.hover3').hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})
+
+
+
+
 
 
 //-----------------------------------------------广告
@@ -5,189 +61,196 @@ $('.circle').click(function(){
 	$('.advertising-wrap').remove();
 })
 
-//------------------------------------------------#top----------------------left
-$('#top .left li a').hover(function(){
-	$(this).css({
-		"color" : "red"
+//------------------------------------------------#top
+
+
+$("header #top .left .li1").hover(function(){
+	$("header #top .left #QRcode").css("display","block")
+	$("header #top .left li .ts4").css("border-right","0")
+	$("header #top .left li .ts2").css("border-right","0")
+	$("header #top .left .li1").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
+	})
+	$("header #top .left .li1 i").css({
+		"border-top" : "6px solid #fff",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #999",
+    	"border-left": "6px solid #fff",
+    	"top": "6px",
+    	"right":"5px"
 	})
 },function(){
-	$(this).css({
-		"color" : "#a4a4a4"
+	$("header #top .left #QRcode").css("display","none")
+	$("header #top .left li .ts4").css("border-right","1px solid #e4e4e4")
+	$("header #top .left li .ts2").css("border-right","1px solid #e4e4e4")
+	$("header #top .left .li1").css({
+		"border-left" : "0",
+		"border-right" : "0",
+		"background" : ""
 	})
-	$('.menu li a').css({
-		"color" : "#000"
+	$("header #top .left .li1 i").css({
+		"border-top" : "6px solid #999",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #fff",
+    	"border-left": "6px solid #fff",
+    	"top": "12px",
+    	"right":"5px"
 	})
 })
 
-
-$('header #top .left .te4').hover(function(){
-	$('.left i').css({
-		"border-style" : "solid",
-        "border-width" : "5px 5px 5px 5px",
-        "border-color" : "#fff #fff #999999 #fff",
-        "top" : "6px"
+$("header #top .left #QRcode").hover(function(){
+	$("header #top .left #QRcode").css("display","block")
+	$("header #top .left li .ts4").css("border-right","0")
+	$("header #top .left li .ts2").css("border-right","0")
+	$("header #top .left .li1").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
 	})
-	$("#top .left .te4").css({
-		"border-left" : "1px solid #ededed",
-		"border-right" : "1px solid #ededed",
-        "border-bottom" : "1px solid #fff"
-	})
-	$('#top .left .te4 .te2').css({
-		"border-right" : "0"
-	})
-	$('.te0').css({
-		"border-right" : "0"
-	})
-	$('#top .left #QRcode').css({
-		"display" : "block"
+	$("header #top .left .li1 i").css({
+		"border-top" : "6px solid #fff",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #999",
+    	"border-left": "6px solid #fff",
+    	"top": "6px",
+    	"right":"5px"
 	})
 },function(){
-	$('.left i').css({
-		"border-style" : "solid",
-        "border-width" : "5px 5px 5px 5px",
-        "border-color" : "#999999 #fff #fff #fff",
-        "top" : "11px"
+	$("header #top .left #QRcode").css("display","none")
+	$("header #top .left li .ts4").css("border-right","1px solid #e4e4e4")
+	$("header #top .left li .ts2").css("border-right","1px solid #e4e4e4")
+	$("header #top .left .li1").css({
+		"border-left" : "0",
+		"border-right" : "0",
+		"background" : ""
 	})
-	$("#top .left .te4").css({
-		"border" : "0",
-	})
-	$('#top .left .te4 .te2').css({
-		"border-right" : "1px solid #e4e4e4"
-	})
-	$('.te0').css({
-		"border-right" : "1px solid #e4e4e4"
-	})
-	$('#top .left #QRcode').css({
-		"display" : "none"
+	$("header #top .left .li1 i").css({
+		"border-top" : "6px solid #999",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #fff",
+    	"border-left": "6px solid #fff",
+    	"top": "12px",
+    	"right":"5px"
 	})
 })
 
 
-$('header #top .left .te5').hover(function(){
-	$('.left em').css({
-		"border-style" : "solid",
-        "border-width" : "5px 5px 5px 5px",
-        "border-color" : "#fff #fff #999999 #fff",
-        "top" : "6px",
+
+$("header #top .left .li2").hover(function(){
+	$("header #top .left .menu").css("display","block")
+	$("header #top .left li .ts2").css("border-right","0")
+	$("header #top .left .li2").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
 	})
-	$('.left i').css("right" , "4px")
-	$("#top .left .te5").css({
-		"border-left" : "1px solid #ededed",
-		"border-right" : "1px solid #ededed",
-        "border-bottom" : "1px solid #fff"
-	})
-	$("#top .left .te5 .te3").css({
-		"border-right" : "0"
-	})
-	$('#top .left .te4 .te2').css({
-		"border-right" : "0"
-	})
-	$('#top .left .menu').css({
-		"display" : "block"
+	$("header #top .left .li1 em").css({
+		"border-top" : "6px solid #fff",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #999",
+    	"border-left": "6px solid #fff",
+    	"top": "6px",
+    	"right":"5px"
 	})
 },function(){
-	$('.left em').css({
-		"border-style" : "solid",
-        "border-width" : "5px 5px 5px 5px",
-        "border-color" : "#999999 #fff #fff #fff",
-        "top" : "11px",
+	$("header #top .left .menu").css("display","none")
+	$("header #top .left li .ts2").css("border-right","1px solid #e4e4e4;")
+	$("header #top .left .li2").css({
+		"border-left" : "",
+		"border-right" : "",
+		"background" : ""
 	})
-	$('.left i').css("right" , "5px")
-	$("#top .left .te5").css({
-		"border" : "0",
-	})
-	$("#top .left .te5 .te3").css({
-		"border-right" : "1px solid #e4e4e4"
-	})
-	$('#top .left .te4 .te2').css({
-		"border-right" : "1px solid #e4e4e4"
-	})
-	$('#top .left .menu').css({
-		"display" : "none"
+	$("header #top .left .li1 em").css({
+		"border-top" : "6px solid #999",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #fff",
+    	"border-left": "6px solid #fff",
+    	"top": "12px",
+    	"right":"5px"
 	})
 })
-//------------------------------------------------#top----------------------right
-$('#top .right li a').hover(function(){
-	$(this).css({
-		"color" : "red"
+
+
+
+
+$("header #top .left .menu").hover(function(){
+	$("header #top .left .menu").css("display","block")
+	$("header #top .left li .ts2").css("border-right","0")
+	$("header #top .left .li2").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
+	})
+	$("header #top .left .li1 em").css({
+		"border-top" : "6px solid #fff",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #999",
+    	"border-left": "6px solid #fff",
+    	"top": "6px",
+    	"right":"5px"
 	})
 },function(){
-	$(this).css({
-		"color" : "#a4a4a4"
+	$("header #top .left .menu").css("display","none")
+	$("header #top .left li .ts2").css("border-right","1px solid #e4e4e4;")
+	$("header #top .left .li2").css({
+		"border-left" : "",
+		"border-right" : "",
+		"background" : ""
+	})
+	$("header #top .left .li1 em").css({
+		"border-top" : "6px solid #999",
+     	"border-right" : "6px solid #fff",
+    	"border-bottom" : "6px solid #fff",
+    	"border-left": "6px solid #fff",
+    	"top": "12px",
+    	"right":"5px"
 	})
 })
 
 
-$('#top .right span').hover(function(){
-	$('.te13').css({
-		"color" : "red"
+$("header #top .right .ts1").hover(function(){
+	$("header #top .right .ts2").css("display","block")
+	$("header #top .right li .ts4").css("border-right","0")
+	$("header #top .right .ts1").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
 	})
 },function(){
-	$('.te13').css({
-		"color" : "#a4a4a4"
+	$("header #top .right .ts2").css("display","none")
+	$("header #top .right li .ts4").css("border-right","1px solid #e4e4e4")
+	$("header #top .right .ts1").css({
+		"border-left" : "",
+		"border-right" : "",
+		"background" : ""
 	})
 })
 
-$('.right .te14').hover(function(){
-	$(this).css({
-		"border-top" : "1px solid #a4a4a4",
-		"border-left" : "1px solid #a4a4a4",
-		"border-right" : "1px solid #a4a4a4",
-		"border-bottom" : "1px solid yellow"
-	})
-	$('.te14 .box').css({
-		"display" : "block"
-	})
-	$('.te12').css({
-		"border" : "0"
+
+
+
+$("header #top .left .menu").hover(function(){
+	$("header #top .right .ts2").css("display","block")
+	$("header #top .right li .ts4").css("border-right","0")
+	$("header #top .right .ts1").css({
+		"border-left" : "1px solid #e4e4e4",
+		"border-right" : "1px solid #e4e4e4",
+		"background" : "#fff"
 	})
 },function(){
-	$(this).css({
-		"border" : "0",
-	})
-	$('.te14 .box').css({
-		"display" : "none"
-	})
-	$('.te12').css({
-		"border-right" : "1px solid #a4a4a4"
+	$("header #top .right .ts2").css("display","none")
+	$("header #top .right li .ts4").css("border-right","1px solid #e4e4e4")
+	$("header #top .right .ts1").css({
+		"border-left" : "",
+		"border-right" : "",
+		"background" : ""
 	})
 })
 
 
-$("#dyz").click(function(){
-	let str=`
-				<div id="shade"></div>
-				<div id="enter">
-					<h6>
-						<span class="ts">X</span>
-					</h6>
-					<h2>
-						<a href="" class="ts">账号登录</a>
-						<a href="">扫码登录</a>
-					</h2>
-					<form action="" method="">
-						<input type="text" name="" id="shoujihao" value="" placeholder="手机号/邮件地址"/>
-						<input type="text" name="" id="pwd" value="" placeholder="密码"/>
-						<a href="">短信验证码登录</a>
-						<input type="submit" name="" id="sub" value="登录" />
-						<input type="radio" name="name" id="" value="" />记住华为账号
-					</form>
-					<h3>
-						<a href="login.html" class="ts">注册账号</a>
-						<a href="">忘记密码？</a>
-					</h3>
-					<div id="btom"></div>
-					<p class="one"></p>
-				</div>
-			`;
-	$("body").append(str);
-	alert($("body"))
-})
-
-$("#enter h6 .ts").click(function(){
-	$("#enter h6 .ts").remove();
-})
-
+//-----------------------------------------点击请登录出现遮罩层---------------------cookie-----------
 //key={username:"13434343434",password:"34343434"}
 var sw=true;
 var use=false;
@@ -223,7 +286,7 @@ function fn1(){
 	})
 
 }
-fn1();
+
 
 
 function fn2(){
@@ -242,24 +305,62 @@ function fn2(){
 				pass=true;
 			}else{
 				$("#enter .one").css("display","block")
-				$("#enter .one").html("请输入你的密码")
+				$("#enter .one").html("请正确输入你的密码")
 				sw=false;
 				pass=false;
 			}
 		}
 	})
 }
-fn2();
 
-$("form").submit(function(){
-	alert(use&&pass)
-	if(use&&pass){
-		location.href="index.html"
-		return true;
-	}else{
-		return false;
-	}
+$("#dyz").click(function(){
+	let str=`
+				<div id="shade"></div>
+				<div id="enter">
+					<h6>
+						<span class="ts">X</span>
+					</h6>
+					<h2>
+						<a href="" class="ts">账号登录</a>
+						<a href="">扫码登录</a>
+					</h2>
+					<form action="" method="">
+						<input type="text" name="" id="shoujihao" value="" placeholder="手机号/邮件地址" maxlength="11"/>
+						<input type="password" name="" id="pwd" value="" placeholder="密码"/>
+						<a href="">短信验证码登录</a>
+						<input type="submit" name="" id="sub" value="登录" />
+						<input type="radio" name="name" id="" value="" />记住华为账号
+					</form>
+					<h3>
+						<a href="login.html" class="ts">注册账号</a>
+						<a href="">忘记密码？</a>
+					</h3>
+					<div id="btom"></div>
+					<p class="one"></p>
+				</div>
+			`;
+	$("body").append(str);
+	fn1()
+	fn2()
+	$("#enter form").submit(function(){
+		alert(use&&pass)
+		if(use&&pass){
+			location.href="index.html"
+			return true;
+		}else{
+			return false;
+		}
+	})
+	$("#enter h6 .ts").click(function(){
+		$("#shade").remove();
+		$("#enter").remove();
+	})
 })
+
+
+
+
+
 
 
 
@@ -401,18 +502,19 @@ var indexA=0;
 var timer=null;
 function fn(){
 	$('.banner-wrap').css("transition","all 1s")
-	$('.banner-wrap').css("background-image","url(http://127.0.0.1/huaweishop/img/banner"+ (indexA++ %8+1) +".jpg)")
+//	console.log($('.banner-wrap').css("background-image"))
+	$('.banner-wrap').css("background-image","url(http://10.9.168.110/huaweishop/img/banner"+ (indexA++ %8+1) +".jpg)")
 }
 function fu(){
 	timer=setInterval(function(){
 		fn();
 	},5000)
 }
-fu();
 fn();
+fu();
 $('#cli span').mouseenter(function(){
 	indexA=$(this).index();
-	console.log(indexA)
+//	console.log(indexA)
 	$(this).css("background","#fff");
 	fn();
 	clearInterval(timer);
@@ -438,87 +540,48 @@ $.ajax({
 	success:function(arr){
 //		return arr;
 //		console.log(arr.length)
+//		console.log(arr)
 //		$('#column #gt #notice .p').html(arr[0].vle);
-		for(var i=0,len=arr.length;i<len;i++){
-			var h3=document.createElement('h3');
-			$('#column #gt #notice .notice').append(h3);
-			$('#column #gt #notice .notice h3').css({
-				"width" : "245px",
-                "height" : "16px",
-                "line-height" : "16px",
-                "font-size" : "13px",
-                "border" : "1px solid yellow",
-                "cursor" : "pointer",
-                "white-space" : "nowrap",
-                "overflow" : "hidden",
-                "text-overflow" : "ellipsis",
-                "position" : "absolute",
-                "top" : "16px"
-			})
-		}
-		                    
+		for(let i=0,len=arr.length;i<len;i++){
+			let str =`
+				<h3>${arr[i].vle}</h3>
+			`;
+			$("#notice .notice").append(str);
+		} 
+		var $h3=$("<h3 class=ts>我是皮</h3>")
+		$('#notice .notice').append($h3)
+//		$('#notice .notice h3').mouseenter(function(){
+//			$("#notice .notice h3").css("color","red");
+//			columnAuto();
+//			clearInterval(colTimer);
+//		})
+//		$('#notice .notice h3').mouseleave(function(){
+//			$("#notice .notice h3").css("color","#000");
+//			setInterval(colTimer);
+//			columnAuto()
+//		})
 	}
 });
-//var Noticetimer=null;
-//var Nnum=1;
-////1.克隆元素	
-//function Notice(){
-//	var Disp=Nnum++;
-//	var Displace=-34*Disp;
-////	alert(-34*Disp)
-//	$('#column #gt #notice .notice h3').css("transition","all 1s")
-//	if(Displace== -170){
-//		$('#column #gt #notice .notice h3').css("transform","translateY(0px)")
-//	}else{
-////		$('#column #gt #notice .notice h3').css("transform","translateY("+ Displace +"px)")
-//	}
-//}
-////Notice();
-//function Noticeauto(){
-//	Noticetimer=setInterval(function(){
-////		Notice();
-//	},2000)
-//}
-//Noticeauto();
+var indexB=0;
+var colTimer=null;
+function column(){
+	if(indexB<6){
+		console.log(indexB)
+		$("#notice .notice h3").animate({"top":-(indexB*34)},1000);
+		indexB++;
+	}else{
+		indexB=0;
+		$("#notice .notice .ts").css("top","238px");
+	}
+}
+function columnAuto(){
+	colTimer=setInterval(function(){
+		column();
+	},500)
+}
+column();
+columnAuto();
 
-//获取大盒子
-//	let scroll = document.getElementById("scroll");
-	//获取notice
-//	let notice = $('#column #gt #notice .notice');
-//	//获取notice中的h3
-//	let h3 = $('#column #gt #notice .notice').find("h3");
-//	//获取每个h3的高度
-//	let h3Height = 16;
-//	console.log(h3)
-//	//1.克隆元素
-//	notice.append(h3.clone(true));
-//	
-//	
-//	function animate(obj,target){
-//		clearInterval(obj.Noticetimer);
-//		let speed = obj.offsetTop < target ? 15 : -15;
-//		obj.Noticetimer = setInterval(()=>{
-//			obj.css("top","obj.offsetTop + speed + 'px'");
-//			if(Math.abs(target - obj.offsetTop) <= Math.abs(speed)){
-//				clearInterval(obj.Noticetimer);
-//				obj.style.top = target + 'px';
-//			}
-//		},30);
-//	}
-//	
-//var Noticetimer=null;
-//var key = 0; //控制播放的数量
-//var circle = 0;
-//var olLis = document.querySelectorAll('#ol li');
-//Noticetimer = setInterval(autoPlay,3000);
-//function autoPlay(){
-//	key ++;
-//	if(key > notice.length - 1){
-//		notice.css("top","0")
-//		key = 1;
-//	}
-//	animate(h3,-key * h3Height);
-//}
 
 //-----------------------------------------------------------#pic
 $.ajax({
@@ -526,6 +589,7 @@ $.ajax({
 	url:"pic.json",
 	async:true,
 	success:function(arr){
+//		console.log(arr)
 		for(let i=0,len=arr.length;i<len;i++){
 			let str=`
 				<img src="${arr[i].src}"/>
@@ -541,37 +605,54 @@ $.ajax({
 
 
 
+//-------------------------------------------------------------------#recommend
+$.ajax({
+	type:"get",
+	url:"recomment.json",
+	async:true,
+	success:function(arr){
+//		console.log(arr)
+		for(let i=0,len=arr.length;i<len;i++){
+			let str=`
+				<li>
+					<img src="${arr[i].src}"/>
+					<dd></dd>
+					<p></p>
+					<span></span>
+				</li>
+			`;
+			$(".recommend ul").append(str);
+			$(".recommend ul li dd").html(arr[i].model);
+			$(".recommend ul li p").html(arr[i].refe);
+			$(".recommend ul li span").html(arr[i].price);
+		}
+	}
+});
 
 
 
 
-
-
-
-
-//function conClick(){
-//var  $bigBox = $(".competitive");
-// var $btnLeft = $(".competitive-wrap-but1");
-//  var $btnRight = $(".competitive-wrap-but2");
-//  var left = 0;
-//      $btnRight.click(function(){    
-//              left += -1200;
-//              if(left <=-5000){
-//                  left = -5960;
-//              }
-//          $bigBox.animate({"left":left},400);
-//          
-//      });
-//      $btnLeft.click(function(){    
-//          left += 1200;
-//          if(left >=0){
-//              left = 0;
-//          }
-//      $bigBox.animate({"left":left},400);
-//      
-//  });
-//}
-//conClick();
+function publicClick(){
+var  $ul = $(".recommend .bott ul");
+   var $left = $(".leftbutton");
+    var $right = $(".rightbutton");
+    var left = 0;
+        $right.click(function(){    
+                left += -1200;
+                if(left <=-5300){
+                    left = -5300;
+                }
+            $ul.animate({"left":left},400); 
+        });
+        $left.click(function(){    
+            left += 1200;
+            if(left >=0){
+                left = 0;
+            }
+        $ul.animate({"left":left},400);
+    });
+}
+publicClick();
 
 
 

@@ -37,6 +37,10 @@ body {
   background: #f5f5f5;
 }
 
+dl {
+  cursor: pointer;
+}
+
 .advertising-wrap {
   display: block;
   background: url(../img/advertising.jpg) no-repeat center/cover;
@@ -68,170 +72,166 @@ body {
 
 header {
   width: 1200px;
-  height: 102px;
+  height: 100px;
   margin: 0 auto;
-  background: #ffffff;
 }
 header #top {
   width: 1200px;
   height: 30px;
 }
 header #top .left {
+  width: 900px;
+  height: 30px;
   float: left;
   position: relative;
-  border: 1px solid yellow;
 }
-header #top .left .li {
+header #top .left li {
   float: left;
   height: 30px;
-  position: relative;
-}
-header #top .left .li a {
-  border-right: 1px solid #e4e4e4;
-  font-size: 12px;
-  color: #a4a4a4;
   line-height: 30px;
-  padding: 0 9px 0 7px;
-  border: 1px solid blue;
 }
-header #top .left .li .te1 {
-  padding: 0 9px 0 0;
+header #top .left li a {
+  font-size: 12px;
+  color: #aca4b7;
+  padding: 0px 8px 0px 7px;
+  border-right: 1px solid #e4e4e4;
 }
-header #top .left .li .te2 {
-  padding: 0 21px 0 7px;
+header #top .left li a:hover {
+  color: red;
 }
-header #top .left .li .te3 {
-  padding: 0 21px 0 7px;
-  border-right: 0;
+header #top .left li .ts1 {
+  padding: 0px 8px 0px 0px;
 }
-header #top .left .te4 {
+header #top .left li .ts2 {
+  padding: 0px 20px 0px 7px;
+}
+header #top .left li .ts3 {
+  padding: 0px 20px 0px 7px;
+}
+header #top .left .li1 {
   position: relative;
-  z-index: 100;
-  box-sizing: border-box;
+  z-index: 19;
 }
-header #top .left .te4 i {
-  border-style: solid;
-  border-width: 5px 5px 5px 5px;
-  border-color: #999999 #fff #fff #fff;
+header #top .left .li1 i {
+  border-top: 6px solid #999;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid #fff;
   position: absolute;
-  top: 11px;
+  top: 12px;
   right: 5px;
 }
-header #top .left .te4 #QRcode {
+header #top .left #QRcode {
   width: 164px;
   height: 140px;
   border: 1px solid #ededed;
   background: #fff;
-  position: absolute;
-  top: 29px;
-  left: -90px;
   overflow: hidden;
-  display: none;
+  position: absolute;
+  top: 28px;
+  left: 436px;
   z-index: 9;
+  display: none;
 }
-header #top .left .te4 #QRcode strong {
+header #top .left #QRcode strong {
   display: block;
   width: 76px;
   height: 76px;
   margin: 20px auto 10px;
   background: url(../img/QRcode.png) no-repeat center/cover;
 }
-header #top .left .te4 #QRcode p {
+header #top .left #QRcode p {
   font-size: 12px;
   text-align: center;
+  color: red;
 }
-header #top .left .te4 #QRcode p .te9 {
+header #top .left #QRcode p .ts0 {
+  color: black;
   border: 0;
 }
-header #top .left .te5 {
-  box-sizing: border-box;
-  background: #fff;
+header #top .left .li2 {
+  position: relative;
+  z-index: 19;
 }
-header #top .left .te5 em {
-  border-style: solid;
-  border-width: 5px 5px 5px 5px;
-  border-color: #999999 #fff #fff #fff;
+header #top .left .li2 em {
+  border-top: 6px solid #999;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid #fff;
   position: absolute;
-  top: 11px;
+  top: 12px;
   right: 5px;
 }
-header #top .left .te5 .menu {
+header #top .left .li2 .ts3 {
+  border-right: 0;
+}
+header #top .left .menu {
   width: 164px;
   height: 148px;
   border: 1px solid #ededed;
   background: #fff;
   position: absolute;
   top: 29px;
-  left: -89px;
-  overflow: hidden;
-  display: none;
+  left: 512px;
   z-index: 9;
+  display: none;
 }
-header #top .left .te5 .menu li {
+header #top .left .menu li {
+  width: 164px;
   height: 30px;
   text-align: center;
 }
-header #top .left .te5 .menu li a {
+header #top .left .menu li a {
   line-height: 30px;
   font-size: 12px;
   color: #000;
+  border-right: 0;
 }
-header #top .left .te5 .menu li .te8 {
-  border: 0;
-}
-header #top .left .te5 .menu .te6 {
-  margin-top: 10px;
+header #top .left .menu li a:hover {
+  color: red;
 }
 header #top .right {
-  float: right;
+  width: 234px;
   height: 30px;
+  float: right;
+  position: relative;
 }
 header #top .right li {
   float: left;
   height: 30px;
+  line-height: 30px;
 }
 header #top .right li a {
-  padding: 0 9px 0 7px;
-  line-height: 30px;
   font-size: 12px;
-  color: #a4a4a4;
+  color: #aca4b7;
+  padding: 0px 8px 0px 7px;
 }
-header #top .right li .te11 {
-  border-right: 1px solid #a4a4a4;
+header #top .right li a:hover {
+  color: red;
 }
-header #top .right li .te12 {
-  border-right: 1px solid #a4a4a4;
+header #top .right li .ts3 {
+  border-right: 1px solid #e4e4e4;
 }
-header #top .right li .te13 {
-  padding: 0 0 0 40px;
+header #top .right li .ts4 {
+  border-right: 1px solid #e4e4e4;
 }
-header #top .right .te14 {
+header #top .right .ts1 {
   position: relative;
-  background: #fff;
+  z-index: 19;
 }
-header #top .right .te14 span {
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url(../img/精灵图.png) no-repeat 0 0;
-  position: absolute;
-  top: 8px;
-  left: 11px;
-  cursor: pointer;
-}
-header #top .right .te14 .box {
+header #top .right .ts2 {
   width: 462px;
   height: 234px;
-  border: 1px solid #a4a4a4;
+  border: 1px solid #e4e4e4;
   position: absolute;
-  left: -371px;
+  right: 12px;
   top: 29px;
-  display: none;
   background: #fff;
   z-index: 9;
   overflow: hidden;
+  display: none;
 }
-header #top .right .te14 .box .yuan {
+header #top .right .ts2 .yuan {
   width: 102px;
   height: 102px;
   background: #f5f4f5 url(../img/未标题-1.jpg) no-repeat 22px 26px;
@@ -240,7 +240,7 @@ header #top .right .te14 .box .yuan {
   margin-left: 180px;
   margin-bottom: 16px;
 }
-header #top .right .te14 .box p {
+header #top .right .ts2 p {
   font-size: 12px;
   color: #a4a4a4;
   text-align: center;
@@ -248,7 +248,6 @@ header #top .right .te14 .box p {
 header #bottom {
   width: 1200px;
   height: 70px;
-  overflow: hidden;
   position: relative;
 }
 header #bottom h1 {
@@ -1131,7 +1130,6 @@ header #bottom #pox .ts {
 #banner #cli {
   width: 176px;
   height: 12px;
-  border: 1px solid yellow;
   position: absolute;
   left: 508px;
   bottom: 27px;
@@ -1282,6 +1280,21 @@ header #bottom #pox .ts {
   width: 245px;
   height: 48px;
   position: relative;
+}
+#column #gt #notice .notice h3 {
+  width: 245px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  border: 1px solid yellow;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  top: 0px;
+  left: 0;
+  margin-top: 16px;
 }
 #column #gt #real {
   width: 306px;
@@ -1449,90 +1462,77 @@ header #bottom #pox .ts {
   margin-top: 6px;
 }
 
-#recommend {
+.recommend {
   width: 1200px;
   height: 344px;
-  background: #555555;
   margin: 0 auto;
   margin-top: 14px;
+  position: relative;
 }
-#recommend h2 {
+.recommend h2 {
   width: 90px;
   height: 52px;
   color: #3a3a3a;
   line-height: 52px;
   font-size: 22px;
-  border: 1px solid yellow;
 }
-#recommend .bott {
-  width: 1200px;
-  height: 291px;
-  border: 1px solid red;
-  position: relative;
-  overflow: hidden;
-}
-#recommend .bott .leftbutton {
+.recommend .leftbutton {
   width: 22px;
   height: 75px;
   background: #f0f0f0;
   position: absolute;
   left: 0;
-  top: 115px;
+  top: 165px;
   font-size: 16px;
   text-align: center;
   line-height: 75px;
   color: #ffffff;
   cursor: pointer;
+  z-index: 100;
 }
-#recommend .bott .rightbutton {
+.recommend .rightbutton {
   width: 22px;
   height: 75px;
   background: #f0f0f0;
   position: absolute;
   right: 0;
-  top: 115px;
+  top: 165px;
   font-size: 16px;
   text-align: center;
   line-height: 75px;
   color: #ffffff;
   cursor: pointer;
+  z-index: 100;
 }
-#recommend .bott dl {
+.recommend .bott {
+  width: 1200px;
+  height: 291px;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  overflow: hidden;
+}
+.recommend .bott ul {
+  width: 6510px;
+  height: 291px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.recommend .bott ul li {
   float: left;
   width: 217px;
   height: 291px;
-  border: 1px solid green;
-  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
 }
-#recommend .bott dl dt {
+.recommend .bott ul li img {
   width: 129px;
   height: 137px;
-  border: 1px solid blue;
   margin-top: 38px;
   margin-left: 44px;
-  position: relative;
 }
-#recommend .bott dl dt i {
-  display: block;
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: -8px;
-  right: -22px;
-}
-#recommend .bott dl dt .ts1 {
-  background: url(../img/shoufa.png) no-repeat center/cover;
-}
-#recommend .bott dl dt .ts3 {
-  background: url(../img/tehui.png) no-repeat center/cover;
-}
-#recommend .bott dl dt .ts4 {
-  background: url(../img/baokuan.png) no-repeat center/cover;
-}
-#recommend .bott dl dt .ts5 {
-  background: url(../img/mianxi.png) no-repeat center/cover;
-}
-#recommend .bott dl dd {
+.recommend .bott ul li dd {
   margin-top: 22px;
   color: #3a3a3a;
   height: 24px;
@@ -1540,14 +1540,14 @@ header #bottom #pox .ts {
   font-size: 12px;
   text-align: center;
 }
-#recommend .bott dl p {
+.recommend .bott ul li p {
   color: #a4a4a4;
   text-align: center;
   height: 21px;
   line-height: 21px;
   font-size: 12px;
 }
-#recommend .bott dl span {
+.recommend .bott ul li span {
   display: block;
   color: #cc0e11;
   text-align: center;
@@ -2110,13 +2110,6 @@ header #bottom #pox .ts {
   background: url(../img/zncd.png) no-repeat center/cover;
 }
 
-#watchlb {
-  width: 1200px;
-  height: 292px;
-  margin: 10px auto 0;
-  border: 1px solid red;
-}
-
 #home {
   width: 1200px;
   height: 770px;
@@ -2252,13 +2245,6 @@ header #bottom #pox .ts {
   height: 346px;
   overflow: hidden;
   background: url(../img/znjj.png) no-repeat center/cover;
-}
-
-#wifilb {
-  width: 1200px;
-  height: 292px;
-  margin: 10px auto 0;
-  border: 1px solid red;
 }
 
 #parts {
@@ -2397,13 +2383,6 @@ header #bottom #pox .ts {
   background: url(../img/rxpj.png) no-repeat center/cover;
 }
 
-#erlb {
-  width: 1200px;
-  height: 292px;
-  margin: 10px auto 0;
-  border: 1px solid red;
-}
-
 #brand {
   width: 1200px;
   height: 770px;
@@ -2538,13 +2517,6 @@ header #bottom #pox .ts {
   height: 346px;
   overflow: hidden;
   background: url(../img/pppj.png) no-repeat center/cover;
-}
-
-#pplb {
-  width: 1200px;
-  height: 292px;
-  margin: 10px auto 0;
-  border: 1px solid red;
 }
 
 #new {
@@ -2786,12 +2758,12 @@ footer ul .li4 {
   font-size: 14px;
   color: #fff;
   line-height: 40px;
+  display: none;
 }
 
 #hover {
   width: 40px;
   height: 60px;
-  border: 1px solid yellow;
   position: fixed;
   bottom: 20px;
   right: 0;
@@ -2820,21 +2792,16 @@ footer ul .li4 {
   height: 14px;
   margin-top: 6px;
   border-radius: 6px;
-  background: #6c6c6c;
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-  line-height: 14px;
-}
-#hover .hover1 span:hover {
   background: url(../img/精灵图.png) no-repeat -80px -199px;
+  display: none;
 }
 #hover .hover2 {
   width: 40px;
   height: 60px;
   overflow: hidden;
   position: absolute;
-  right: 30px;
+  display: none;
+  right: 40px;
   background: url(../img/精灵图.png) no-repeat -160px 0;
 }
 #hover .hover2 p {
@@ -2853,13 +2820,6 @@ footer ul .li4 {
   height: 14px;
   margin-top: 6px;
   border-radius: 6px;
-  background: #6c6c6c;
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-  line-height: 14px;
-}
-#hover .hover2 span:hover {
   background: url(../img/精灵图.png) no-repeat -40px -199px;
 }
 #hover .hover3 {
@@ -2867,7 +2827,8 @@ footer ul .li4 {
   height: 60px;
   overflow: hidden;
   position: absolute;
-  right: 70px;
+  right: 80px;
+  display: none;
   background: url(../img/精灵图.png) no-repeat -160px 0;
 }
 #hover .hover3 p {
@@ -2886,13 +2847,6 @@ footer ul .li4 {
   height: 14px;
   margin-top: 6px;
   border-radius: 6px;
-  background: #6c6c6c;
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-  line-height: 14px;
-}
-#hover .hover3 span:hover {
   background: url(../img/精灵图.png) no-repeat 0px -199px;
 }
 
@@ -2901,7 +2855,7 @@ footer ul .li4 {
   height: 100%;
   z-index: 100;
   background: #000;
-  opacity: 0.3;
+  opacity: 0.5;
   position: fixed;
   top: 0;
   left: 0;
@@ -2944,7 +2898,6 @@ footer ul .li4 {
 #enter h2 {
   width: 329px;
   height: 22px;
-  border: 1px solid red;
   margin: 28px auto 0;
 }
 #enter h2 a {
@@ -3025,10 +2978,13 @@ footer ul .li4 {
 #enter .one {
   width: 330px;
   height: 16px;
+  font-size: 12px;
+  color: red;
+  line-height: 16px;
   position: absolute;
   top: 106px;
   left: 84px;
-  display: none;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
