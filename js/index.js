@@ -10,6 +10,9 @@ $("dl").hover(function(){
 		"box-shadow":""
 	})
 })
+$("dl").click(function(){
+	location.href="detali.html"
+})
 $(window).scroll(function(){
 //	console.log($("html,body").scrollTop())
 	if($("html,body").scrollTop()>=1900){
