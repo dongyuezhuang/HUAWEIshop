@@ -390,6 +390,208 @@ header #bottom #pox .ts {
   height: 176px;
   background: url(../img/tu1.jpg);
 }
+#main .right .fuwu {
+  width: 700px;
+  height: 71px;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+}
+#main .right .fuwu h2 {
+  height: 28px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+#main .right .fuwu h2 p {
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 16px;
+  font-size: 12px;
+}
+#main .right .fuwu h2 span {
+  float: left;
+  margin-top: 8px;
+  margin-right: 35px;
+  font-size: 12px;
+}
+#main .right .fuwu h2 i {
+  float: left;
+  margin-top: 8px;
+  font-size: 12px;
+  font-style: normal;
+}
+#main .right .fuwu h3 {
+  height: 28px;
+  overflow: hidden;
+}
+#main .right .fuwu h3 p {
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 28px;
+  font-size: 12px;
+}
+#main .right .fuwu h3 span {
+  float: left;
+  margin-top: 8px;
+  margin-right: 26px;
+  font-size: 12px;
+}
+#main .right .bottom {
+  height: 400px;
+}
+#main .right .bottom h6 {
+  height: 42px;
+  width: 700px;
+  overflow: hidden;
+}
+#main .right .bottom h6 p {
+  float: left;
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 26px;
+  font-size: 12px;
+}
+#main .right .bottom h6 span {
+  float: left;
+  width: 98px;
+  height: 38px;
+  border: 1px solid #a4a4a4;
+  margin-top: 1px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-indent: 48px;
+  line-height: 38px;
+  background: url(../img/极光蓝.jpg) no-repeat center/cover;
+}
+#main .right .bottom h5 {
+  height: 42px;
+  width: 700px;
+  overflow: hidden;
+}
+#main .right .bottom h5 p {
+  float: left;
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 26px;
+  font-size: 12px;
+}
+#main .right .bottom h5 span {
+  float: left;
+  width: 98px;
+  height: 38px;
+  margin-top: 1px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 38px;
+}
+#main .right .bottom h4 {
+  height: 42px;
+  width: 700px;
+  overflow: hidden;
+}
+#main .right .bottom h4 p {
+  float: left;
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 26px;
+  font-size: 12px;
+}
+#main .right .bottom h4 span {
+  float: left;
+  width: 159px;
+  height: 38px;
+  border: 1px solid #a4a4a4;
+  margin-top: 1px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 38px;
+}
+#main .right .bottom h3 {
+  height: 42px;
+  width: 700px;
+  overflow: hidden;
+}
+#main .right .bottom h3 p {
+  float: left;
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 26px;
+  font-size: 12px;
+}
+#main .right .bottom h3 span {
+  float: left;
+  height: 38px;
+  margin-top: 2px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 38px;
+}
+#main .right .bottom .h2 {
+  width: 700px;
+  height: 46px;
+}
+#main .right .bottom .h2 p {
+  float: left;
+  width: 66px;
+  height: 46px;
+  margin-left: 10px;
+  margin-right: 26px;
+  font-size: 16px;
+  text-indent: 19px;
+  line-height: 46px;
+  position: relative;
+  border: 1px solid #d6d6d6;
+}
+#main .right .bottom .h2 p i {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #d6d6d6;
+  font-size: 16px;
+  line-height: 21px;
+  text-indent: 4px;
+  font-style: normal;
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  right: 0;
+}
+#main .right .bottom .h2 p em {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #d6d6d6;
+  font-size: 16px;
+  line-height: 21px;
+  text-indent: 4px;
+  font-weight: 900;
+  font-style: normal;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#main .right .bottom .h2 input {
+  float: left;
+  width: 171px;
+  height: 46px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 46px;
+}
+#main .right .bottom .h2 .ts1 {
+  margin-left: -20px;
+  background: #fc600c;
+}
+#main .right .bottom .h2 .ts2 {
+  margin-left: -20px;
+  background: #ca151d;
+}
 #main .lb {
   width: 454px;
   height: 105px;

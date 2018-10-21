@@ -1,5 +1,13 @@
 
 
+
+
+
+
+
+//------------------------------------------------#top
+
+
 $("header #top .left .li1").hover(function(){
 	$("header #top .left #QRcode").css("display","block")
 	$("header #top .left li .ts4").css("border-right","0")
@@ -71,6 +79,11 @@ $("header #top .left #QRcode").hover(function(){
     	"right":"5px"
 	})
 })
+
+
+
+
+
 
 
 $("header #top .left .li2").hover(function(){
@@ -185,7 +198,7 @@ $("header #top .right .ts2").hover(function(){
 	})
 })
 
-//-----------------------------------------------------------------------#bottom
+//--------------------------------------------#bottom
 $('#bottom input').focus(function(){
 	$('#bottom #pox').css("display","none")
 })
@@ -195,50 +208,109 @@ $('#bottom input').blur(function(){
 
 
 
-//===========---------------------------------------------------------放大镜
-$("#main .phone .mask").mouseenter(function(){
-	$("#main .phone .float").css("display","block")
-	$("#main .glass").css("display","block")
-})
-$("#main .phone .mask").mouseleave(function(){
-	$("#main .phone .float").css("display","none")
-	$("#main .glass").css("display","none")
-})
-
-
-$("#main .phone .mask").mousemove(function(e){
-	var $float=$("#main .phone .float");
-	var e=e||event;
-//鼠标的页面坐标值 - 大盒子相对页面的left  - 滑块宽度的一半
-	var left = e.pageX - $("#main .phone .mask").offset().left - $float.outerWidth() / 2;
-	var top = e.pageY - $("#main .phone .mask").offset().top- $float.outerHeight() / 2;
-//边界
-	if(left <= 0){
-		left = 0;
-	}else if(left >= $("#main .phone .mask").outerWidth() - $float.outerWidth()){
-		left = $("#main .phone .mask").outerWidth() - $float.outerWidth();
+//===========================================================#main
+$.ajax({
+	type:"get",
+	url:"list.json",
+	async:true,
+	success:function(arr){
+		for(var i=0;i<arr.length;i++){
+			var str=`
+				<dl>
+					<img src="${arr[i].src}" />
+					<dd>${arr[i].model}</dd>
+					<span>${arr[i].price}</span>
+					<p>
+						<i>选购</i>
+						<i class="ts">${arr[i].pingjia}</i>
+					</p>
+				</dl>
+			`;$("#main .pic").append(str);
+		}
 	}
-	if(top <= 0){
-		top = 0;
-	}else if(top >= $("#main .phone .mask").outerHeight() - $float.outerHeight()){
-		top = $("#main .phone .mask").outerHeight() - $float.outerHeight();
+});
+//function main(){
+//	var nNum=0;
+//	$('#main ul .ts00').click(function(){
+//		if(nNum<3){
+//			$('#main pic')
+//		}
+//	})
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//====================================================#bottom-1
+function botom(){
+	for(let i=0;i<5;i++){
+		let str=`
+				<div class="div${i}">
+					<li class="hg"></li>
+					<li class="lis ts">
+						友情链接
+						<i>&lt;</i>
+						<em>&gt;</em>
+					</li>
+					<li class="xx"><a href="#">购物指南</a></li>
+					<li class="xx"><a href="#">配送方式</a></li>
+					<li class="xx"><a href="#">支付方式</a></li>
+					<li class="xx"><a href="#">常见问题</a></li>
+				</div>
+		`;
+		$("#bottom-1 #main2 .ts1 .box-big").append(str);
 	}
-	$float.css({
-		"left" : left,
-		"top" : top
-	})
-	
-	//求小图的移动比例
-	let pX = left / ($("#main .phone .mask").outerWidth() - $float.outerWidth());
-	let pY = top / ($("#main .phone .mask").outerHeight() - $float.outerHeight());
-	//设置大图的坐标值
-	var lt = - pX * ($("#main .glass img").outerWidth()-$("#main .glass").outerWidth())
-	var tp = - pY * ($("#main .glass img").outerHeight()-$("#main .glass").outerHeight())
-	$("#main .glass img").css({
-		"left" : lt,
-		"top" : tp
-	})
-})	
+	var nNum=0;
+	$("#bottom-1 #main2 .ts1 .box-big div i").click(function(){
+		if(nNum>-4){
+			$("#bottom-1 #main2 .ts1 .box-big").animate({"left":--nNum*159},500)
+			nNum	
+		}else if(nNum<=-4){
+			nNum=-4;
+		}
+	})	
+	$("#bottom-1 #main2 .ts1 .box-big div em").click(function(){
+		if(nNum<0){
+			$("#bottom-1 #main2 .ts1 .box-big").animate({"left":nNum*159+159},500)
+			++nNum;
+		}else if(nNum>=0){
+			nNum=0;
+		}
+	})	
+}
+botom();
 
 
 
@@ -254,13 +326,44 @@ $("#main .phone .mask").mousemove(function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
+//=======================================================zuihou
+$(window).scroll(function(){
+//	console.log($("html,body").scrollTop())
+	if($("html,body").scrollTop()>=500){
+		$("#scrolltop").css("display","block")
+	}else{
+		$("#scrolltop").css("display","none")
+	}
+})
+$("#scrolltop").click(function(){
+	$("html,body").animate({
+		"scrollTop":"0"
+	},500)
+})
+$(".hover1").hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})
+$('.hover2').hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})
+$('.hover3').hover(function(){
+	$(".hover1 span").css("display","block")
+	$(".hover2").css("display","block")
+	$(".hover3").css("display","block")
+},function(){
+	$(".hover1 span").css("display","none")
+	$(".hover2").css("display","none")
+	$(".hover3").css("display","none")
+})

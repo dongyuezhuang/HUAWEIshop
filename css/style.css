@@ -1264,6 +1264,7 @@ header #bottom #pox .ts {
   height: 48px;
   border: 1px solid #eaeaea;
   background: #eaeaea;
+  overflow: hidden;
 }
 #column #gt #notice span {
   float: left;
@@ -1271,7 +1272,6 @@ header #bottom #pox .ts {
   height: 16px;
   margin-top: 15px;
   margin-left: 13px;
-  border: 1px solid yellow;
   background: url(../img/精灵图.png) no-repeat -16px -213px;
   cursor: pointer;
 }
@@ -1279,6 +1279,7 @@ header #bottom #pox .ts {
   float: right;
   width: 245px;
   height: 48px;
+  overflow: hidden;
   position: relative;
 }
 #column #gt #notice .notice h3 {
@@ -1286,7 +1287,6 @@ header #bottom #pox .ts {
   height: 16px;
   line-height: 16px;
   font-size: 13px;
-  border: 1px solid yellow;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -2622,6 +2622,7 @@ header #bottom #pox .ts {
   position: absolute;
   top: 16px;
   left: 61px;
+  cursor: pointer;
 }
 #bottom-1 #main2 ul .ts em {
   display: block;
@@ -2637,6 +2638,7 @@ header #bottom #pox .ts {
   position: absolute;
   top: 16px;
   left: 77px;
+  cursor: pointer;
 }
 #bottom-1 #main2 #botrgt {
   width: 164px;
@@ -2676,9 +2678,39 @@ header #bottom #pox .ts {
   text-indent: 71px;
 }
 #bottom-1 #main2 .ts1 {
+  width: 159px;
+  height: 170px;
   border-right: 1px solid #ebebeb;
   margin-right: 40px;
-  border: 1px solid yellow;
+  position: relative;
+  overflow: hidden;
+}
+#bottom-1 #main2 .ts1 .box-big {
+  width: 800px;
+  height: 170px;
+  position: relative;
+}
+#bottom-1 #main2 .ts1 .box-big div {
+  width: 159px;
+  height: 170px;
+  float: left;
+  border-right: 1px solid #ebebeb;
+  margin-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bottom-1 #main2 .ts1 .box-big .div1 {
+  left: 159px;
+}
+#bottom-1 #main2 .ts1 .box-big .div2 {
+  left: 318px;
+}
+#bottom-1 #main2 .ts1 .box-big .div3 {
+  left: 477px;
+}
+#bottom-1 #main2 .ts1 .box-big .div4 {
+  left: 636px;
 }
 
 .footer-wrap {
